@@ -19,6 +19,11 @@
             $this->name = $name;
             $this->price = $price;
           }
+
+          // priceプロパティの値を出力するメソッド
+          public function show_price(){
+            return $this->price;
+          }
         }
 
         // クラスを定義する
@@ -32,6 +37,11 @@
             $this->name = $name;
             $this->height = $height;
             $this->weight = $weight;
+          }
+
+          // heightプロパティの値を出力するメソッド
+          public function show_height(){
+            return $this->height;
           }
         }
 
@@ -47,11 +57,11 @@
     </p>
     <p>
       <?php
-        // インスタンス化してプロパティにアクセスし、値を出力する
+        // インスタンス化してメソッドにアクセスし、値を出力する
         $price = new Food('Potato', 250);
-        echo $price->price . '<br>';
+        echo $price->show_price() . '<br>';
         $height = new Animal('dog', 60, 5000);
-        echo $height->height . '<br>';
+        echo $height->show_height() . '<br>';
       ?>
     </p>
   </body>
