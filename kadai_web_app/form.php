@@ -35,4 +35,5 @@
         </table>
         <input type="submit" value="送信">
     </form>
-</body>
+  </body>
+</html>
